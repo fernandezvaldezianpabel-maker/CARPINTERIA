@@ -1,0 +1,194 @@
+/* Estilos generales */
+body {
+    font-family: 'arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: rgba(8, 1, 1, 0.616);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fad5b0;
+    color: rgb(20, 26, 29);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 200px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: rgba(3, 2, 2, 0.349);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    background: url('images/oj.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(6, 8, 10);
+    padding: 0 5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #e0cab3;
+    color: rgb(128, 0, 32);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.dark-bg {
+    background-color: #976736;
+}
+
+/* Grids y Cards */
+.proyecto-grid, .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card, .product-card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 210px;
+    box-shadow: 0 4px 6px rgba(179, 66, 66, 0.1);
+}
+
+/* Dashboard de cultivos */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.data-box {
+    background: olive;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    background: #993300;
+    border-radius: 10px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.progress {
+    background: #996633;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Formulario de contacto */
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(221, 221, 221, 0.459);
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Estilos para la tabla de ventas */
+.table-container {
+    overflow-x: auto;
+    margin: 2rem auto;
+    max-width: 100%;
+}
+
+#tabla-ventas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#tabla-ventas th, #tabla-ventas td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.253);
+}
+
+#tabla-ventas th {
+    background-color: #003333;
+    color: rgba(255, 255, 255, 0.438);
+}
+
+#tabla-ventas tr:hover {
+    background-color: #663300;
+}
+
+#tabla-ventas button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editar {
+    background-color: #996633;
+    color: rgb(0, 0, 0);
+}
+
+.eliminar {
+    background-color: #663300;
+    color: rgba(255, 255, 255, 0.192);
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
